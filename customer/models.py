@@ -7,7 +7,7 @@ account_type = (
     ('customer','customer'),
     ('barista', 'barista'),
 )
-
+#####
 class profile(AbstractUser):
     account_type =  models.CharField(max_length=12, choices=account_type, default='customer')
     def __str__(self):
